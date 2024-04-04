@@ -1,8 +1,7 @@
-
-// Toggles the class of HTML tag 'HEADER' when user clicks the
-// div#toggle_header tag
-
-$('div#toggle_header').click(function () {
-    $('header').ToggleClass('red');
-  });
-
+$('DIV#red_header').click(function () {
+  if ($(this).hasClass('red')) {
+    $(this).removeClass('red').addClass('green');
+  } else {
+    $(this).removeClass('green').addClass('red');
+  }
+});
